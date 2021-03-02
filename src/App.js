@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import {Upload} from './components/Upload';
+import logo from './components/icon.jpg';
+import { Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <nav className="navbar navbar-expand bg-primary">
+       
+          <img src={logo}  style={{width:30,
+             marginTop: -5, marginRight: 5 }}/>
+             <div class=" text-white">
+            <h4>File Server</h4></div>
+             
+          </nav>
+    
+      <Upload />
+  
     </div>
   );
 }
